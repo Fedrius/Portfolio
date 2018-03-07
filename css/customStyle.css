@@ -1,0 +1,16 @@
+.skillsContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.svgContainer {
+    width: 8%;
+}
+
+.svgSize {
+    width: 100%;
+}
+
+.svgName {
+    margin-top: 10px;
+}
