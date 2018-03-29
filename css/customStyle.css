@@ -11,6 +11,14 @@
     width: 100%;
 }
 
+#firebaseIcon {
+    width: 90%;
+}
+
 .svgName {
     margin-top: 10px;
+}
+
+img {
+    vertical-align: baseline;
 }

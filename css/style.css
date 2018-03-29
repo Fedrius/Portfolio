@@ -59,8 +59,6 @@
 
 
 
-
-
 /*==========================================================================================================*/
 /* BASIC     ||---------------------------- */
 /*==========================================================================================================*/
@@ -2756,6 +2754,9 @@ header.header-prepare .nav-bar-icon > span::after {
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 5px;
+
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .intro-title-sm {
@@ -2995,7 +2996,9 @@ ul.icon-tab-nav, .icon-tab-nav ul {
 
     ul.icon-tab-nav li, .icon-tab-nav ul li {
         display: inline-block;
-        width: 200px;
+        width: 16%;
+        max-width: 80px;
+        margin: 0 5%;
     }
 
 .icon-tab-nav {
@@ -3008,7 +3011,7 @@ ul.icon-tab-nav, .icon-tab-nav ul {
     }
 
     .icon-tab-nav .icon-tab-nav-title {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .icon-tab-nav a, .icon-tab-nav .icon-tab-nav-title {
