@@ -22,3 +22,8 @@
 img {
     vertical-align: baseline;
 }
+
+.profilePic {
+    width: 100%;
+    max-width: 400px;
+}

@@ -390,7 +390,7 @@ h6 {
 
 /* Alternate Hadding */
 .alt-title {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 600;
     letter-spacing: 1px;
 }
