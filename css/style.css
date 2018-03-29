@@ -2751,11 +2751,11 @@ header.header-prepare .nav-bar-icon > span::after {
 
 .intro-title {
     font-size: 70px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    /*margin-top: 40px;*/
+    /*margin-bottom: 40px;*/
     font-weight: 400;
     line-height: 1.1;
-    /*letter-spacing: -2px;*/
+    letter-spacing: 5px;
 }
 
 .intro-title-sm {
@@ -2786,14 +2786,14 @@ header.header-prepare .nav-bar-icon > span::after {
 @media (max-width: 1024px) {
     .intro-title {
         letter-spacing: 0;
-        font-size: 46px;
+        font-size: 60px;
     }
 }
 
 @media (max-width: 767px) {
     .intro-title {
         letter-spacing: 0;
-        font-size: 30px;
+        font-size: 50px;
     }
 }
 
@@ -3540,44 +3540,84 @@ form .error {
     /*------------------------------------------------------------------*/
     /* Social */
     /*------------------------------------------------------------------*/
-    .footer .social {
-        list-style: outside none none;
-        padding: 0;
-    }
+    /*.footer .social {*/
+        /*list-style: outside none none;*/
+        /*padding: 0;*/
+    /*}*/
 
-        .footer .social li {
-            display: inline-block;
-            list-style: outside none none;
-            margin: 0 8px;
-        }
+        /*.footer .social li {*/
+            /*display: inline-block;*/
+            /*list-style: outside none none;*/
+            /*margin: 0 8px;*/
+        /*}*/
 
-            .footer .social li a {
-                border: 1px solid #222;
-                display: block;
-                font-size: 14px;
-                height: 30px;
-                line-height: 28px;
-                text-align: center;
-                width: 30px;
-                transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                -o-transform: rotate(45deg);
-                -webkit-transform: rotate(45deg);
-            }
+            /*.footer .social li a {*/
+                /*border: 1px solid #222;*/
+                /*display: block;*/
+                /*font-size: 14px;*/
+                /*height: 30px;*/
+                /*line-height: 28px;*/
+                /*text-align: center;*/
+                /*width: 30px;*/
+                /*transform: rotate(45deg);*/
+                /*-moz-transform: rotate(45deg);*/
+                /*-ms-transform: rotate(45deg);*/
+                /*-o-transform: rotate(45deg);*/
+                /*-webkit-transform: rotate(45deg);*/
+            /*}*/
 
-                .footer .social li a i, .footer .social li a span {
-                    transform: rotate(-45deg);
-                    -moz-transform: rotate(-45deg);
-                    -ms-transform: rotate(-45deg);
-                    -o-transform: rotate(-45deg);
-                    -webkit-transform: rotate(-45deg);
-                }
+                /*.footer .social li a i, .footer .social li a span {*/
+                    /*transform: rotate(-45deg);*/
+                    /*-moz-transform: rotate(-45deg);*/
+                    /*-ms-transform: rotate(-45deg);*/
+                    /*-o-transform: rotate(-45deg);*/
+                    /*-webkit-transform: rotate(-45deg);*/
+                /*}*/
 
-                .footer .social li a:hover {
-                    background: #222 none repeat scroll 0 0;
-                    color: #fff;
-                }
+                /*.footer .social li a:hover {*/
+                    /*background: #222 none repeat scroll 0 0;*/
+                    /*color: #fff;*/
+                /*}*/
+
+/*second social*/
+.social {
+    list-style: outside none none;
+    padding: 0;
+}
+
+.social li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 8px;
+}
+
+.social li a {
+    border: 1px solid #222;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    width: 30px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.social li a i, .social li a span {
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.social li a:hover {
+    background: #222 none repeat scroll 0 0;
+    color: #fff;
+}
 
 
 /*------------------------------------------------------------------*/
