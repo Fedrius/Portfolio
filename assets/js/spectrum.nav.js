@@ -23,11 +23,18 @@ jQuery(document).ready(function() {
     };
 
     // Auto Collapses the Navigation Menu when an item is clicked on - Mobile devices only
-    if (isMobile.any()) {
-        $('.navbar-collapse a').click(function(e) {
+    // if (isMobile.any()) {
+    //     $('.navbar-collapse a').click(function(e) {
+    //         $('.navbar-collapse').collapse('toggle');
+    //     });
+    // }
+
+    $(window).click(function (){
+        if($('.navbar-collapse').attr('aria-expanded') === "true"){
             $('.navbar-collapse').collapse('toggle');
-        });
-    }
+        }
+    });
+
 
     // One Page Smooth Scrolling
     $('.page-scroll a').bind('click', function(event) {
@@ -37,6 +44,8 @@ jQuery(document).ready(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+
 
 });
 
@@ -48,3 +57,4 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
+
