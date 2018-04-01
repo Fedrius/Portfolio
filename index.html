@@ -24,6 +24,7 @@
     <link href="assets/css/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="assets/css/spectrum-orange.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -320,7 +321,12 @@
                             <div id="success"></div>
                             <div class="row">
                                 <div class="form-group col-xs-12 text-center">
-                                    <button type="submit" class="submitFormBtn btn btn-lg btn-primary btn-square btn-raised">Send</button>
+                                    <div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-1">
+                                        <div class="g-recaptcha" data-sitekey="6Le8PVAUAAAAAMw1VGAUnZn68xUSXm7PIBz5Ly0c"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-2 col-md-3">
+                                        <button type="submit" class="submitFormBtn btn btn-lg btn-primary btn-square btn-raised">Send</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
