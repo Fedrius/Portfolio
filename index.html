@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Paul M Lee">
 
-    <title>Spectrum</title>
+    <title>Paul's Portfolio Site</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -56,11 +56,8 @@
     <![endif]-->
 
 </head>
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <div id="wrapper">
-
         <nav class="navbar navbar-dark navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
@@ -68,13 +65,9 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="#page-top">
-
-                            <!--<img src="assets/img/logo.png" alt="">-->
-                            <h4 class="logoPosAdjust">Paul M Lee</h4>
-
+                        <h4 class="logoPosAdjust">Paul M Lee</h4>
                     </a>
                 </div>
-
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
@@ -86,13 +79,10 @@
                             <a href="#about">About</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#services">Services</a>
+                            <a href="#services">Applications</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="#testimonials">Testimonials</a>
+                            <a href="#portfolio">Skills</a>
                         </li>
                         <li class="page-scroll">
                             <a href="#contact">Contact</a>
@@ -101,7 +91,6 @@
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container -->
         </nav>
 
         <header class="intro-img intro-dark-bg" style="background-image: url(assets/img/snowyMountain.jpg)" data-stellar-background-ratio="0.5">
@@ -137,38 +126,38 @@
         <section id="about" class="about-2">
             <div class="container">
                 <div class="row" data-scrollreveal="enter left">
-                    <div class="col-lg-4 col-lg-offset-1">
-                        <img src="assets/img/imageOfPaul.jpg" class="profilePic img-circle img-responsive img-centered" alt="">
+                    <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1">
+                        <img src="assets/img/imageOfPaul.jpg" class="boxShadow profilePic img-circle img-responsive img-centered" alt="">
                     </div>
-                    <div class="col-lg-5 text-center" data-scrollreveal="enter right">
-                        <h2>About Me</h2>
+                    <div class="col-lg-6 col-md-6 text-center aboutContent" data-scrollreveal="enter right">
+                        <h2 class="aboutTitle">About Me</h2>
                         <hr class="primary">
-                        <p>Hi there! My name is Johnathan Johnson and I am a freelance web designer and graphic artist. I have a passion for all things creative, and I am ready to help you with your next project!</p>
-                        <p>Connect with me via social media, view my
-                            <span class="page-scroll"><a href="#portfolio">past work</a>
-                            </span>, or
-                            <span class="page-scroll"><a href="#contact">contact me</a>
-                            </span>now if you're ready to get started!</p>
+                        <p>Hi, My Name is Paul and I'm a Front End Developer from Torrance, California.
+                            I also have experience in working with back end technologies such as Node.JS and Express.
+                            React in particular has been my favorite JS library to learn so far because of its virtual DOM
+                            and the ease of creating and reusing components. Currently, I'm learning Java on side as well and working on creating a
+                        website for a small business restaraunt.<!--(or just say restaraunt called Oishii Sushi).--> Learning is a lifelong process and
+                            I'd like to pass on my knowledge to help others in their coding journey as well.</p>
+                        <p>When I'm not coding or spending time with family and friends, I like to play various games such as Cuphead, which is a fantastic game.
+                            Snowboarding in the Winter is one of my biggest passions and I've also started learning to surf this year.</p>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn btn-social-dark btn-facebook">
-                                    <i class="fa fa-fw fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-social-dark btn-linkedin">
+                                <a target="_blank" href="https://www.linkedin.com/in/paulmlee7" class="btn btn-social-dark btn-linkedin">
                                     <i class="fa fa-fw fa-linkedin"></i>
                                 </a>
+                                <!--<h5>LinkIn</h5>-->
                             </li>
                             <li>
-                                <a href="#" class="btn btn-social-dark btn-twitter">
-                                    <i class="fa fa-fw fa-twitter"></i>
+                                <a target="_blank" href="https://www.github.com/fedrius" class="btn btn-social-dark btn-github">
+                                    <i class="fa fa-fw fa-github"></i>
                                 </a>
+                                <!--<h5>Github</h5>-->
                             </li>
                             <li>
-                                <a href="#" class="btn btn-social-dark btn-dribbble">
-                                    <i class="fa fa-fw fa-dribbble"></i>
+                                <a target="_blank" href="#" class="btn btn-social-dark btn-css3">
+                                    <i class="fa fa-fw fa-file-pdf-o"></i>
                                 </a>
+                                <!--<h5>Resume</h5>-->
                             </li>
                         </ul>
                     </div>
@@ -180,38 +169,32 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center" data-scrollreveal="move 0">
-                        <h2>Portfolio</h2>
+                        <h2>Applications</h2>
                         <hr class="primary">
-                        <ul class="list-inline" id="filters">
-                            <li>
-                                <button data-filter="*" type="button" class="btn btn-primary btn-square btn-raised">All</button>
-                            </li>
-                            <li>
-                                <button data-filter=".web" type="button" class="btn btn-primary btn-square btn-raised">Website</button>
-                            </li>
-                            <li>
-                                <button data-filter=".graphic" type="button" class="btn btn-primary btn-square btn-raised">Graphic</button>
-                            </li>
-                            <li>
-                                <button data-filter=".print" type="button" class="btn btn-primary btn-square btn-raised">Print</button>
-                            </li>
-                        </ul>
+                        <p>I've had a great time creating my own apps and working with a team on several projects.
+                            Here are a few I'd like to showcase.</p>
                     </div>
                 </div>
                 <div class="row" data-scrollreveal="enter bottom">
                     <div class="isotope">
-                        <div class="col-sm-4 portfolio-item web">
-                            <a href="#portfolio-modal-1" class="portfolio-link" data-toggle="modal">
-                                <div class="caption">
-                                    <div class="caption-content">
-                                        <h3><i class="fa fa-search fa-2x"></i>
-                                        </h3>
+                        <div class="col-sm-6 col-md-4 portfolio-item web">
+                            <div class="boxShadow">
+                                <h3 class="text-center">Live Face Off</h3>
+                                <a href="#portfolio-modal-1" class="portfolio-link" data-toggle="modal">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <h3><i class="fa fa-search fa-2x"></i>
+                                            </h3>
+                                            <p>View</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <img src="assets/img/demo-portfolio/1.jpg" class="img-centered" alt="">
-                            </a>
+                                    <img src="assets/img/portfolio/Livefaceoff.png" class="img-centered" alt="">
+                                </a>
+                                <h5 class="text-center">Live | Github</h5>
+                            </div>
+
                         </div>
-                        <div class="col-sm-4 portfolio-item graphic">
+                        <div class="col-sm-6 col-md-4 portfolio-item graphic">
                             <a href="#portfolio-modal-2" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -222,8 +205,8 @@
                                 <img src="assets/img/demo-portfolio/2.jpg" class="img-centered" alt="">
                             </a>
                         </div>
-                        <div class="col-sm-4 portfolio-item print">
-                            <a href="#portfolio-modal-1" class="portfolio-link" data-toggle="modal">
+                        <div class="col-sm-6 col-md-4 portfolio-item print">
+                            <a href="#portfolio-modal-2" class="portfolio-link" data-toggle="modal">
                                 <div class="caption">
                                     <div class="caption-content">
                                         <h3><i class="fa fa-search fa-2x"></i>
@@ -297,12 +280,13 @@
             <div class="container">
                 <div class="row" data-scrollreveal="move 0">
                     <div class="col-lg-12 text-center">
-                        <h2>Let's Get In Touch</h2>
+                        <h2>Contact Me</h2>
                         <hr class="primary">
+                        <p>Send me a message if you'd like to know more about myself or my work</p>
                     </div>
                 </div>
                 <div class="row" data-scrollreveal="enter bottom">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-sm-8 col-sm-offset-2">
                         <form name="sentMessage" id="contactForm" novalidate>
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -328,8 +312,8 @@
                             <br>
                             <div id="success"></div>
                             <div class="row">
-                                <div class="form-group col-xs-12">
-                                    <button type="submit" class="btn btn-lg btn-primary btn-square btn-raised">Send</button>
+                                <div class="form-group col-xs-12 text-center">
+                                    <button type="submit" class="submitFormBtn btn btn-lg btn-primary btn-square btn-raised">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -342,9 +326,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h2 class="script">Thank's for visiting Spectrum!</h2>
-                        <p>Spectrum is a multi-purpose, Bootstrap based, one-page website theme and framework. You can buy Spectrum on the WrapBootstrap theme store. It comes complete with many starter examples and color themes, LESS files for advanced customization, and extensive documentation and usage instructions.</p>
-                        <p class="small">Copyright &copy; 2015 - Start Bootstrap Themes. All Rights Reserved.</p>
+                        <h2 class="script">Thank's for visiting</h2>
                     </div>
                     <div class="col-md-3 col-md-offset-1">
                         <h3 class="script">Find me!</h3>
@@ -431,48 +413,6 @@
         </div>
     </div>
 
-    <!-- Standard Portfolio Modal - Video and Text -->
-    <div id="portfolio-modal-2" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row first">
-                    <div class="col-lg-12">
-                        <h2 class="page-header">Project Name</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <iframe src="http://player.vimeo.com/video/87701971?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" style="border: none;"></iframe>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Project Description:</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, et, ea, accusantium reprehenderit aliquam numquam fuga natus fugiat odit distinctio illo at unde.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, iusto molestiae possimus sint dignissimos! Laudantium, dolore, vel, sint, labore optio perferendis illo dolorum similique soluta eum cupiditate assumenda consequatur maiores.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3>Project Details:</h3>
-                        <ul class="list-unstyled project-details">
-                            <li>
-                                <strong>Client:</strong>Lorem Ipsum</li>
-                            <li>
-                                <strong>Services:</strong>Web Design, Photography</li>
-                            <li>
-                                <strong>Date:</strong>January 2015</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Core JavaScript Files -->
     <script src="assets/js/jquery-1.10.2.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
@@ -484,7 +424,7 @@
     <script src="assets/js/plugins/jquery.fs.wallpaper/jquery.fs.wallpaper.min.js"></script>
     <script src="assets/js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
     <!--<script src="assets/js/plugins/jquery.tubular/jquery.tubular.1.0.js"></script>-->
-    <!--<script src="assets/js/plugins/owl.carousel/owl.carousel.min.js"></script>-->
+    <script src="assets/js/plugins/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/js/plugins/scrollReveal/scrollReveal.js"></script>
     <script src="assets/js/plugins/stellar/stellar.js"></script>
     <script src="assets/js/plugins/SmoothScroll/SmoothScroll.js"></script>

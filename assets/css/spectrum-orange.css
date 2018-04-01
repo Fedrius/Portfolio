@@ -501,7 +501,7 @@ a.light-text:focus {
     width: 100%;
     background-color: black;
     background-image: url('../img/diagonal-noise.png');
-    opacity: 0.3;
+    opacity: 0.2;
     position: absolute;
     top: 0;
     left: 0;
@@ -1067,7 +1067,7 @@ a.light-text:focus {
   padding-left: 0;
   border: none;
   border-radius: 0;
-  font-size: 1.5em;
+  font-size: 1.1em;
   background: none;
   box-shadow: none !important;
   resize: none;
@@ -2274,11 +2274,12 @@ fieldset[disabled] .btn-danger.active {
   font-size: 20px;
   line-height: 37px;
 }
-.btn-css3:hover,
-.btn-css3:focus {
-  outline: none;
-  color: #f4f5f7;
-  background-color: #0170ba;
+.btn-css3:hover {
+    outline: none;
+    color: #f4f5f7;
+    background-color: #0170ba;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.23);
 }
 .btn-dribbble {
   -webkit-transition: all 0.3s ease-in-out;
@@ -2330,6 +2331,8 @@ fieldset[disabled] .btn-danger.active {
   outline: none;
   color: #f4f5f7;
   background-color: #3b5998;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.23);
 }
 .btn-flickr {
   -webkit-transition: all 0.3s ease-in-out;
@@ -2376,11 +2379,12 @@ fieldset[disabled] .btn-danger.active {
   font-size: 20px;
   line-height: 37px;
 }
-.btn-github:hover,
-.btn-github:focus {
-  outline: none;
-  color: #f4f5f7;
-  background-color: #4183c4;
+.btn-github:hover {
+    outline: none;
+    color: #f4f5f7;
+    background-color: #4183c4;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.23);
 }
 .btn-google-plus {
   -webkit-transition: all 0.3s ease-in-out;
@@ -2444,11 +2448,12 @@ fieldset[disabled] .btn-danger.active {
   font-size: 20px;
   line-height: 37px;
 }
-.btn-linkedin:hover,
-.btn-linkedin:focus {
-  outline: none;
-  color: #f4f5f7;
-  background-color: #007fb1;
+.btn-linkedin:hover {
+    outline: none;
+    color: #f4f5f7;
+    background-color: #007fb1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+                0 3px 6px rgba(0,0,0,0.23);
 }
 .btn-linux {
   -webkit-transition: all 0.3s ease-in-out;
