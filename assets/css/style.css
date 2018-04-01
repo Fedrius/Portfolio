@@ -1,8 +1,77 @@
-.profilePic {
-    width: 100%;
-    max-width: 400px;
+.boxShadow {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+    0 6px 6px rgba(0,0,0,0.23);
 }
 
 .logoPosAdjust {
     padding-top: 4px;
+}
+
+@media (max-width: 775px){
+    .logoPosAdjust {
+        margin-left: 15px;
+    }
+}
+
+.profilePic {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px){
+    .profilePic {
+        margin-top: 10px;
+    }
+}
+
+
+@media(min-width:767px) {
+    .about-img-1 {
+        background-image: url(../img/imageOfPaul.jpg);
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+.aboutTitle {
+    margin-top: 0;
+}
+
+@media (min-width: 767px){
+    .aboutContent p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px){
+    .aboutContent {
+        margin-left: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.portfolio-item > .boxShadow {
+    padding: 10px;
+}
+
+.projectTitle {
+
+}
+
+.projectLink {
+
+}
+
+
+.submitFormBtn {
+    padding: 10px 30px;
 }
