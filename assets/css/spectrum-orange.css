@@ -430,7 +430,7 @@ a.light-text:focus {
 .intro-slider .intro-welcome,
 .intro-slider-half .intro-welcome,
 .intro-video .intro-welcome {
-  font-size: 20px;
+  font-size: 24px;
   margin: 0;
   font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -440,7 +440,7 @@ a.light-text:focus {
 .intro-slider .brand-heading,
 .intro-slider-half .brand-heading,
 .intro-video .brand-heading {
-  font-size: 30px;
+  font-size: 40px;
   margin: 0;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   /*text-transform: uppercase;*/
