@@ -80,6 +80,10 @@ ul.icon-tab-nav li {
     margin: 0 5%;
 }
 
+.iconTitle {
+    margin-bottom: 20px;
+}
+
 .svgContainer {
     width: 8%;
 }

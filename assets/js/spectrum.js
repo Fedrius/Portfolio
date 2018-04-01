@@ -96,7 +96,7 @@ jQuery(document).ready(function() {
     });
 
     // Activates FitVids jQuery Plugin
-    $(".container").fitVids();
+    // $(".container").fitVids();
 
     // Activates Magnific Popup jQuery Plugin
     $('.gallery-item').magnificPopup({
@@ -106,9 +106,9 @@ jQuery(document).ready(function() {
         }
     });
 
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-        type: 'iframe',
-    });
+    // $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+    //     type: 'iframe',
+    // });
 
     // Floating label Headings for the Contact Form
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
