@@ -49,23 +49,18 @@
     }
 }
 
-
-
-
-
 .portfolio-item > .boxShadow {
     padding: 10px;
 }
 
 .projectTitle {
-
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 .projectLink {
-
+    margin-top: 15px;
 }
-
-
 
 ul.icon-tab-nav {
     list-style: none;
