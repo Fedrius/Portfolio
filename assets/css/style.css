@@ -1,6 +1,6 @@
 .boxShadow {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19),
-    0 6px 6px rgba(0,0,0,0.23);
+                0 6px 6px rgba(0,0,0,0.23);
 }
 
 .logoPosAdjust {
@@ -25,7 +25,6 @@
     }
 }
 
-
 @media(min-width:767px) {
     .about-img-1 {
         background-image: url(../img/imageOfPaul.jpg);
@@ -33,7 +32,6 @@
         max-width: 400px;
     }
 }
-
 
 .aboutTitle {
     margin-top: 0;
@@ -66,6 +64,8 @@
 .projectLink {
 
 }
+
+
 
 ul.icon-tab-nav {
     list-style: none;
@@ -102,10 +102,27 @@ ul.icon-tab-nav li {
     margin-top: 10px;
 }
 
-
-
-
 .submitFormBtn {
     padding: 10px 30px;
+}
+
+.leftFooter {
+    margin-top: 0;
+}
+
+.footerContact > ul {
+    list-style: none;
+    padding-left: 50px;
+}
+
+@media (max-width: 991px){
+    .footerContact {
+        text-align: center;
+    }
+
+    .footerContact > ul {
+        list-style: none;
+        padding-left: 0;
+    }
 }
 
