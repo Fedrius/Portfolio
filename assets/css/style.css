@@ -55,10 +55,6 @@
 
 
 
-
-
-
-
 .portfolio-item > .boxShadow {
     padding: 10px;
 }
@@ -71,7 +67,45 @@
 
 }
 
+ul.icon-tab-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.icon-tab-nav {
+    display: block;
+}
+
+ul.icon-tab-nav li {
+    display: inline-block;
+    width: 16%;
+    max-width: 80px;
+    margin: 0 5%;
+}
+
+.svgContainer {
+    width: 8%;
+}
+
+.svgSize {
+    width: 100%;
+    vertical-align: baseline;
+}
+
+#firebaseIcon {
+    width: 90%;
+}
+
+.svgName {
+    margin-top: 10px;
+}
+
+
+
 
 .submitFormBtn {
     padding: 10px 30px;
 }
+
