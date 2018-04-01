@@ -17,7 +17,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "php_mailer/mail_handler.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -25,7 +25,8 @@ $(function() {
                     message: message
                 },
                 cache: false,
-                success: function() {
+                success: function(resp) {
+                    console.log(resp);
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
