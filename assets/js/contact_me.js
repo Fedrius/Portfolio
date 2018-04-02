@@ -5,6 +5,7 @@ $(function() {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
+            document.getElementById('submitFormBtn').disabled = true;
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var name = $("input#name").val();
@@ -23,6 +24,7 @@ $(function() {
                     .append("</button>");
                 $('#success > .alert-danger').append("<strong>Please verify that you are a meat bag");
                 $('#success > .alert-danger').append('</div>');
+                document.getElementById('submitFormBtn').disabled = false;
             } else {
                 $.ajax({
                     url: 'https://cors-anywhere.herokuapp.com/https://www.google.com/recaptcha/api/siteverify',
@@ -55,6 +57,8 @@ $(function() {
 
                                     //clear all fields
                                     $('#contactForm').trigger("reset");
+                                    document.getElementById('submitFormBtn').disabled = false;
+                                    grecaptcha.reset();
                                 },
                                 error: function() {
                                     // Fail message
@@ -65,6 +69,8 @@ $(function() {
                                     $('#success > .alert-danger').append('</div>');
                                     //clear all fields
                                     $('#contactForm').trigger("reset");
+                                    document.getElementById('submitFormBtn').disabled = false;
+                                    grecaptcha.reset();
                                 },
                             })
                         } else {
@@ -73,10 +79,14 @@ $(function() {
                                 .append("</button>");
                             $('#success > .alert-danger').append("<strong>Please re-verify that you are a meat bag");
                             $('#success > .alert-danger').append('</div>');
+                            document.getElementById('submitFormBtn').disabled = false;
+                            grecaptcha.reset();
                         }
                     },
                     error: function(resp){
-                        console.log('error', resp)
+                        console.log('error', resp);
+                        document.getElementById('submitFormBtn').disabled = false;
+                        grecaptcha.reset();
                     }
                 })
             }
