@@ -11,26 +11,26 @@ $output = [
 ];
 
 //sanitize name field
-$message['name'] = filter_var($_POST['form-name'], FILTER_SANITIZE_STRING);
+$message['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 if(empty($message['name'])){
     $output['success'] = false;
     $output['messages'][] = 'missing name key';
 }
 
 //validatte email field
-$message['email'] = filter_var($_POST['form-email'], FILTER_VALIDATE_EMAIL);
+$message['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 if(empty($message['email'])){
     $output['success'] = false;
     $output['messages'][] = 'missing email key';
 }
 
-$message['subject'] = filter_var($_POST['form-subject'], FILTER_SANITIZE_STRING);
-if(empty($message['subject'])){
-    $output['success'] = false;
-    $output['messages'][] = 'missing subject key';
-}
+//$message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+//if(empty($message['subject'])){
+//    $output['success'] = false;
+//    $output['messages'][] = 'missing subject key';
+//}
 
-$message['message'] = filter_var($_POST['form-message'], FILTER_SANITIZE_STRING);
+$message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 if(empty($message['message'])){
     $output['success'] = false;
     $output['messages'][] = 'missing message key';
@@ -64,7 +64,7 @@ $mail->addAddress(EMAIL_USER);
 $mail->addReplyTo($message['email'], $message['name']);
 
 $mail->isHTML(true);
-$mail->Subject = $message['subject'];
+$mail->Subject = 'Message From Porfolio Site'; //$message['subject'];
 $mail->Body    = nl2br($message['message']);
 $mail->AltBody = htmlentities($message['message']);
 
