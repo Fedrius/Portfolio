@@ -23,11 +23,11 @@ jQuery(document).ready(function() {
     };
 
     // Auto Collapses the Navigation Menu when an item is clicked on - Mobile devices only
-    // if (isMobile.any()) {
-    //     $('.navbar-collapse a').click(function(e) {
-    //         $('.navbar-collapse').collapse('toggle');
-    //     });
-    // }
+    if (isMobile.any()) {
+        // $('.navbar-collapse a').click(function(e) {
+        //     $('.navbar-collapse').collapse('toggle');
+        // });
+    }
 
     $(window).click(function (){
         if($('.navbar-collapse').attr('aria-expanded') === "true"){
@@ -35,6 +35,11 @@ jQuery(document).ready(function() {
         }
     });
 
+    $(window).scroll(function() {
+        if($('.navbar-collapse').attr('aria-expanded') === "true"){
+            $('.navbar-collapse').collapse('toggle');
+        }
+    });
 
     // One Page Smooth Scrolling
     $('.page-scroll a').bind('click', function(event) {
@@ -45,19 +50,14 @@ jQuery(document).ready(function() {
         event.preventDefault();
     });
 
-
-
 });
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if($('.navbar-collapse').attr('aria-expanded') === "true"){
-        $('.navbar-collapse').collapse('toggle');
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
-    // if ($(".navbar").offset().top > 50) {
-    //     $(".navbar-fixed-top").addClass("top-nav-collapse");
-    // } else {
-    //     $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    // }
 });
 
