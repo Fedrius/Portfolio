@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 950, 'easeInOutExpo');
         event.preventDefault();
     });
 
@@ -51,10 +51,13 @@ jQuery(document).ready(function() {
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    if($('.navbar-collapse').attr('aria-expanded') === "true"){
+        $('.navbar-collapse').collapse('toggle');
     }
+    // if ($(".navbar").offset().top > 50) {
+    //     $(".navbar-fixed-top").addClass("top-nav-collapse");
+    // } else {
+    //     $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    // }
 });
 
