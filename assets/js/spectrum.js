@@ -119,6 +119,13 @@ jQuery(document).ready(function() {
         $(this).removeClass("floating-label-form-group-with-focus");
     });
 
+    //form input string trim validation
+    $('#submitFormBtn').click(()=>{
+        $('#name').val($('#name').val().trim());
+        $('#message').val($('#message').val().trim());
+        $('#email').val($('#email').val().trim());
+    })
+
 });
 
 // Functions to run on window load
