@@ -115,6 +115,10 @@ ul.icon-tab-nav li {
     padding-left: 50px;
 }
 
+.closeModalBtn {
+    margin-bottom: 20px;
+}
+
 @media (max-width: 991px){
     .footerContact {
         text-align: center;
