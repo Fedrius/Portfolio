@@ -2221,7 +2221,8 @@ fieldset[disabled] .btn-danger.active {
   background-color: transparent;
   color: #3e444d;
 }
-.btn-social-light {
+.btn-social-light,
+.btn-social-light:focus {
   background-color: transparent;
   color: #f4f5f7;
 }
